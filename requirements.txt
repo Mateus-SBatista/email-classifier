@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+jinja2
+python-dotenv  # Opcional, para carregar a GEMINI_API_KEY localmente
+google-genai
+gunicorn
