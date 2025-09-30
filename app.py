@@ -13,7 +13,7 @@ app = FastAPI()
 # Configuração de templates para servir o HTML
 templates = Jinja2Templates(directory="templates")
 
-# Configuração da API Key (Recomendado: usar variáveis de ambiente!)
+# Configuração da API Key
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     try:
