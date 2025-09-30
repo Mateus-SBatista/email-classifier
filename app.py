@@ -1,4 +1,3 @@
-# app.py
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -8,7 +7,7 @@ import os
 from google import genai
 from google.genai.errors import APIError
 
-# --- Configuração do FastAPI ---
+# Configuração do FastAPI 
 app = FastAPI()
 
 # Configuração de templates para servir o HTML
@@ -144,5 +143,4 @@ async def process_email(input_data: EmailInput):
 # --- Inicialização ---
 if __name__ == "__main__":
     import uvicorn
-    # Executa a aplicação localmente
     uvicorn.run(app, host="0.0.0.0", port=8000)
